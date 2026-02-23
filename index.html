@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Management Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📅 Task Management Dashboard</h1>
+
+<div class="board">
+
+    <!-- TO DO -->
+    <div class="column" data-column="todo">
+        <h2>To Do</h2>
+        <div class="add-task">
+            <input type="text" placeholder="New task..." id="todo-input">
+            <button onclick="addTask('todo')">Add</button>
+        </div>
+        <div class="task-list"></div>
+    </div>
+
+    <!-- IN PROGRESS -->
+    <div class="column" data-column="inprogress">
+        <h2>In Progress</h2>
+        <div class="add-task">
+            <input type="text" placeholder="New task..." id="inprogress-input">
+            <button onclick="addTask('inprogress')">Add</button>
+        </div>
+        <div class="task-list"></div>
+    </div>
+
+    <!-- DONE -->
+    <div class="column" data-column="done">
+        <h2>Done</h2>
+        <div class="add-task">
+            <input type="text" placeholder="New task..." id="done-input">
+            <button onclick="addTask('done')">Add</button>
+        </div>
+        <div class="task-list"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
